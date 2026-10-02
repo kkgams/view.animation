@@ -1,0 +1,42 @@
+{
+  "hostImports": {
+    "view.animation-blend-space-1d": [
+      "/util/view-plugin.js"
+    ],
+    "view.animation-blend-space-2d": [
+      "/util/view-plugin.js"
+    ],
+    "view.animation-parameters": [
+      "/core/runtime.js",
+      "/util/animation-tree.js",
+      "/util/view-plugin.js"
+    ],
+    "view.animation-selector": [
+      "/core/runtime.js",
+      "/util/animation-tree.js",
+      "/util/view-plugin.js",
+      "/widgets/inputs/file.js"
+    ],
+    "view.animation-tree": [
+      "/core/runtime.js",
+      "/util/animation-tree.js",
+      "/util/aseprite-animation-clip.js",
+      "/util/node-graph-renderer.js",
+      "/util/node-graph.js",
+      "/util/state-machine-graph-renderer.js",
+      "/util/state-machine-graph.js",
+      "/util/undo.js",
+      "/util/view-canvas-base.js",
+      "/widgets/animation-preview.js",
+      "/widgets/breadcrumbs.js"
+    ]
+  },
+  "limits": "Parent must add source-bound LICENSE/NOTICE evidence before distribution.",
+  "transformation": "Blend entries remove only the other registration block; original source retained under upstream/.",
+  "upstream_sha256": {
+    "views/view-animation-blend-spaces.js": "5ef3c40fcf8d688bab3b9295fa3efa8d65c54d0b36ff45b0330778c7612043a5",
+    "views/view-animation-parameters.js": "a7aac76ea24702868a7dbe124f70c7ea197aed8e37707018a8eaccbca9068ab5",
+    "views/view-animation-selector.js": "c581ca7cdd51257cc7b010b87af7bea8c1081af4e972b1bdc30b4999bdd60f38",
+    "views/view-animation-tree.js": "97d60c08e0c9e32ebcb5140ba25e8663a265c794260a97bf6e02c170bcb3fe82"
+  }
+}

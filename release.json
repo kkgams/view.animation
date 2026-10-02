@@ -1,0 +1,97 @@
+{
+  "hostImports": {
+    "view.animation-blend-space-1d": [
+      "/util/view-plugin.js"
+    ],
+    "view.animation-blend-space-2d": [
+      "/util/view-plugin.js"
+    ],
+    "view.animation-parameters": [
+      "/core/runtime.js",
+      "/util/animation-tree.js",
+      "/util/view-plugin.js"
+    ],
+    "view.animation-selector": [
+      "/core/runtime.js",
+      "/util/animation-tree.js",
+      "/util/view-plugin.js",
+      "/widgets/inputs/file.js"
+    ],
+    "view.animation-tree": [
+      "/core/runtime.js",
+      "/util/animation-tree.js",
+      "/util/aseprite-animation-clip.js",
+      "/util/node-graph-renderer.js",
+      "/util/node-graph.js",
+      "/util/state-machine-graph-renderer.js",
+      "/util/state-machine-graph.js",
+      "/util/undo.js",
+      "/util/view-canvas-base.js",
+      "/widgets/animation-preview.js",
+      "/widgets/breadcrumbs.js"
+    ]
+  },
+  "packages": [
+    {
+      "entry": "views/view-animation-tree.js",
+      "files": {
+        "src/view.animation-tree/views/view-animation-tree.js": "views/view-animation-tree.js"
+      },
+      "kind": "view",
+      "name": "view.animation-tree",
+      "sha256": {
+        "src/view.animation-tree/views/view-animation-tree.js": "97d60c08e0c9e32ebcb5140ba25e8663a265c794260a97bf6e02c170bcb3fe82"
+      },
+      "tag": "view-animation-tree"
+    },
+    {
+      "entry": "views/view-animation-selector.js",
+      "files": {
+        "src/view.animation-selector/views/view-animation-selector.js": "views/view-animation-selector.js"
+      },
+      "kind": "view",
+      "name": "view.animation-selector",
+      "sha256": {
+        "src/view.animation-selector/views/view-animation-selector.js": "c581ca7cdd51257cc7b010b87af7bea8c1081af4e972b1bdc30b4999bdd60f38"
+      },
+      "tag": "view-animation-selector"
+    },
+    {
+      "entry": "views/view-animation-parameters.js",
+      "files": {
+        "src/view.animation-parameters/views/view-animation-parameters.js": "views/view-animation-parameters.js"
+      },
+      "kind": "view",
+      "name": "view.animation-parameters",
+      "sha256": {
+        "src/view.animation-parameters/views/view-animation-parameters.js": "a7aac76ea24702868a7dbe124f70c7ea197aed8e37707018a8eaccbca9068ab5"
+      },
+      "tag": "view-animation-parameters"
+    },
+    {
+      "entry": "views/view-animation-blend-spaces.js",
+      "files": {
+        "src/view.animation-blend-space-1d/views/view-animation-blend-spaces.js": "views/view-animation-blend-spaces.js"
+      },
+      "kind": "view",
+      "name": "view.animation-blend-space-1d",
+      "sha256": {
+        "src/view.animation-blend-space-1d/views/view-animation-blend-spaces.js": "9dec35efca2ce188f49a6b97b8c11e17427aceb378e0c799fc0db509ae96a374"
+      },
+      "tag": "view-animation-blend-space-1d"
+    },
+    {
+      "entry": "views/view-animation-blend-space-2d.js",
+      "files": {
+        "src/view.animation-blend-space-2d/views/view-animation-blend-space-2d.js": "views/view-animation-blend-space-2d.js"
+      },
+      "kind": "view",
+      "name": "view.animation-blend-space-2d",
+      "sha256": {
+        "src/view.animation-blend-space-2d/views/view-animation-blend-space-2d.js": "2a8163fa5bbdab5e1c7bb024ffba7eac3949d815726f93f22696cd38fced9c02"
+      },
+      "tag": "view-animation-blend-space-2d"
+    }
+  ],
+  "repository": "view.animation"
+}

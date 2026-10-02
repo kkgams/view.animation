@@ -1,0 +1,47 @@
+{
+  "dynamicImports": [
+    "/widgets/inputs/<configured-module>.js"
+  ],
+  "failurePolicy": "Missing imports, schemas, required config and providers must fail loudly; no optional defaults introduced.",
+  "guiValidationPending": "Animation tree/selector/parameter editing, graph navigation, playback and DOM blend events",
+  "legacyLimits": [],
+  "requirements": [
+    "Browser DOM and custom elements",
+    "Project Config View ids, source and view-specific configuration",
+    "Configured runtime plugin/service providers",
+    "Host base/theme semantic CSS"
+  ],
+  "staticImports": {
+    "view.animation-blend-space-1d": [
+      "/util/view-plugin.js"
+    ],
+    "view.animation-blend-space-2d": [
+      "/util/view-plugin.js"
+    ],
+    "view.animation-parameters": [
+      "/core/runtime.js",
+      "/util/animation-tree.js",
+      "/util/view-plugin.js"
+    ],
+    "view.animation-selector": [
+      "/core/runtime.js",
+      "/util/animation-tree.js",
+      "/util/view-plugin.js",
+      "/widgets/inputs/file.js"
+    ],
+    "view.animation-tree": [
+      "/core/runtime.js",
+      "/util/animation-tree.js",
+      "/util/aseprite-animation-clip.js",
+      "/util/node-graph-renderer.js",
+      "/util/node-graph.js",
+      "/util/state-machine-graph-renderer.js",
+      "/util/state-machine-graph.js",
+      "/util/undo.js",
+      "/util/view-canvas-base.js",
+      "/widgets/animation-preview.js",
+      "/widgets/breadcrumbs.js"
+    ]
+  },
+  "supportedHost": "2.0.3"
+}
