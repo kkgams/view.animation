@@ -1,5 +1,5 @@
 {
-  "audit_generator_sha256": "94f8a47acaa1c5d1a99c7ae1050c687102b4409e46b23739c47c43b5184708cc",
+  "audit_generator_sha256": "999e96b0f7f73ee59a297f62777b58c5147c567ec85e578c9dc417cec1e22641",
   "audit_input_sha256": {
     "collection.json": "1bc7c436ad588338021663ead7c98f0a7f92d88e2cc46db7b18cec2a926d6087",
     "sources.json": "5af4dd4635af7438e40f92fbc13fe58c4cf297b3e8e017a7b2ab1b73e092dce8",
@@ -13,44 +13,18 @@
     "local_wasi_sdk_version": "33.0+m\nwasi-libc: 161b3195fc25\nllvm: 4434dabb6991\nllvm-version: 22.1.0\nconfig: f992bcc08219\n",
     "maintenance": {
       "changed_inputs": {
-        ".github/workflows/release.yml": {
-          "after": "e15b7a3461efb3933011932b8b56247a96be93bb77f8a685a2c0fc974b21c0a0",
-          "before": "9d4c91a6615d1c045fb2398864aa72b633d6630c6f6e8aff0406faccac076107"
-        },
         "PUBLISHING.md": {
-          "after": "fb51d1929bdb73d747d74cd6d1abb4f588b3aa0fecee109f3c008dcfcfb7c4e8",
-          "before": "74c3775aed7c97b1e898eff6d4c97fee78d6a137de40f81f8699b049668699a3"
+          "after": "a12f0d81b04a32d74c02e318c6c710246e4d047f92fb2619cb1064c41f02cac5",
+          "before": "fb51d1929bdb73d747d74cd6d1abb4f588b3aa0fecee109f3c008dcfcfb7c4e8"
         },
         "package.json": {
-          "after": "be1a8135ed68e80775876b314c7b52563aa46b1a39415dbf5e108a1f74ce7434",
-          "before": "4965660dc2a3ccf2c6ec21fef83fd3d079cbbe05343125f918819fc212edf225"
-        },
-        "scripts/publication.py": {
-          "after": "65544fbaf9eae8a47b56a42c163789498382d00d3ffc080764fbe2b887754d73",
-          "before": null
-        },
-        "test/legal_fixture.py": {
-          "after": "9c136bec16a7e2f759f561c20b88406b79fc7ae55146c849aad11d1f8f90b4a8",
-          "before": "37c2dd10682000390f37d0cd3f08e2e86c6c812efcc0b9a516c5369c6ad50cec"
-        },
-        "test/test_checkout.py": {
-          "after": "fa7fc9bf9b0469f302dfb07444bbb3a4412f9f6e172c9cc50bcc5257ecd9099e",
-          "before": null
-        },
-        "test/test_publication.py": {
-          "after": "95f489f399a7ecfaa6f452c07fa7c65df1e7575b1c8303e37dfeb88e168c215e",
-          "before": null
-        },
-        "test/test_release.py": {
-          "after": "e2146096d9d50167e693680eacc13774783e7212f4c889648cc624b867fa737a",
-          "before": "c49cc8109f4154310b4fc476f0c4b3de33c72cbc9ac31ee7ea4e8e79902d90d2"
+          "after": "09ac8529474cc65208d0b82e518a4d4c766fdc0dca54350374c477896d86e2b1",
+          "before": "be1a8135ed68e80775876b314c7b52563aa46b1a39415dbf5e108a1f74ce7434"
         }
       },
-      "pilot_commit": "b450cc981df92cc11e40d3de90e3993e28607f63",
-      "pilot_public_tag": "v0.1.2",
-      "previous_commit": "c876d5bdc9685d9d7ee003db2e565c027f021480",
-      "previous_evidence_sha256": "0384f4c41921ce9c7ce8c1fd902a6829b01218bc73ac80f2643c60d71e420db1",
-      "review": "First-party publisher/workflow/test/version/docs inputs only. Exact tested event-commit checkout and draft/policy/immutable public flow. All deployed View, HTML, upstream and license-term bytes unchanged."
+      "previous_commit": "cac1eb186b9d18a2ae7ac9b962631d7601438a65",
+      "previous_evidence_sha256": "57b44c6a7ace10217dee8a3438273ad4f451d7833cfe0cc2b67400e1fedc17b2",
+      "review": "Package version and publication example versions only. Host 2.0.3, all deployed/upstream/license terms, publisher/workflow and independent protocol-test fixtures unchanged. No future dependency URL pins."
     },
     "markov_comparison_remote": "justgook/MarkovJunior",
     "markov_comparison_revision": "c44cae86d03cdcd13154a96170ca7a722aabb8d6",
@@ -135,12 +109,12 @@
     "HOST-CONTRACT.json": "083f847ebfec4e0944a9774005c619852f9831bdcc9849e962a4ad9d6375595e",
     "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
     "LICENSING.md": "9c90a7d909f589c226e600b2cd66f551d7769ba9de2b67fc2ee5e9d751de256e",
-    "PUBLISHING.md": "fb51d1929bdb73d747d74cd6d1abb4f588b3aa0fecee109f3c008dcfcfb7c4e8",
+    "PUBLISHING.md": "a12f0d81b04a32d74c02e318c6c710246e4d047f92fb2619cb1064c41f02cac5",
     "README.md": "cead45a528d5d89aaab101c2f0bd04da37c6a95a5a68062400da4bf45baf389e",
     "SOURCE-CLOSURE.json": "455dac7a0c630a0d498ff72a7071fb9455efa5dd40928556510fca4dea3f93f3",
     "THIRD-PARTY-REVIEW.md": "6c6be44f895ca0b7395a434d076ff4370fd74484e3b25619ebff1bbc8ff1c3b6",
     "canonical.json": "9bc13abdb443a9652a160947567d548becacaee8f20959b17412dab9b14edd88",
-    "package.json": "be1a8135ed68e80775876b314c7b52563aa46b1a39415dbf5e108a1f74ce7434",
+    "package.json": "09ac8529474cc65208d0b82e518a4d4c766fdc0dca54350374c477896d86e2b1",
     "release.json": "7844e557a03ec9dd983bc0791263bf89904641372f8eb4b3c163e9491d98b65a",
     "scripts/publication.py": "65544fbaf9eae8a47b56a42c163789498382d00d3ffc080764fbe2b887754d73",
     "scripts/release.py": "4cb8c0ad2e49410d2e7ab8380f002bc2d83c01428444f5cb6d38535a5e7cb624",
@@ -248,7 +222,7 @@
   },
   "repository": "view.animation",
   "schema": 1,
-  "scope": "v0.1.1 verified Catalog publication-flow rollout; unchanged View/upstream/legal bytes; no runtime certification",
+  "scope": "v0.2.0 coordinated version maintenance; unchanged View/upstream/legal/runtime/publisher bytes; no new runtime certification",
   "shipped_host_source_files": [],
   "source_comparison_exclusions": {
     "directories": [
