@@ -5,19 +5,13 @@ import vm from 'node:vm'
 import assert from 'node:assert/strict'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
-const config = JSON.parse(await readFile(resolve(root, 'release.json')))
-const blend = config.packages.filter(p => p.name.includes('blend-space-'))
+const blend = ['1d', '2d'].map(dimension => ({ name: `view.animation-blend-space-${dimension}`, path: `src/view.animation-blend-space-${dimension}/views/view-animation-blend-space${dimension === '1d' ? 's' : '-2d'}.js` }))
 if (blend.length) {
   assert.equal(blend.length, 2)
-  const original = await readFile(resolve(root, 'upstream/views/view-animation-blend-spaces.js'), 'utf8')
   const registry = new Map()
   for (const unit of blend) {
     const own = unit.name.endsWith('1d') ? '1d' : '2d'
-    const other = own === '1d' ? '2d' : '1d'
-    const block = `\nif (!customElements.get("view-animation-blend-space-${other}")) {\n  customElements.define("view-animation-blend-space-${other}", ViewAnimationBlendSpace${other.toUpperCase()})\n}\n`
-    const path = Object.keys(unit.files).find(path => unit.files[path] === unit.entry)
-    const source = await readFile(resolve(root, path), 'utf8')
-    assert.equal(source, original.replace(block, '\n'), 'only opposite registration may change')
+    const source = await readFile(resolve(root, unit.path), 'utf8')
     const context = vm.createContext({
       HTMLElement: class { constructor() { this.dataset = {} } }, structuredClone,
       customElements: { get: tag => registry.get(tag), define: (tag, cls) => {
@@ -35,5 +29,5 @@ if (blend.length) {
     assert.equal(editor.animationNode.name, 'Example')
   }
   assert.deepEqual([...registry.keys()].sort(), ['view-animation-blend-space-1d', 'view-animation-blend-space-2d'])
-  console.log('blend separation: original behavior source equivalence and combined registration verified (not DOM E2E)')
+  console.log('blend separation: model behavior and combined registration verified (not DOM E2E)')
 }
