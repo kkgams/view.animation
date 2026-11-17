@@ -941,7 +941,7 @@ export class ViewAnimationTree extends ViewCanvasBase {
         this.syncHistoryControls()
     }
 
-    recordEdit(label, before) {
+    recordEdit(_label, before) {
         const after = this.captureSnapshot()
         if (JSON.stringify(before) === JSON.stringify(after)) return false
         this.history.clearRedo()
