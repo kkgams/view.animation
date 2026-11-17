@@ -29,6 +29,6 @@ Requires Node.js 24+, Python 3, Make, curl, tar, unzip and zip. No compilation o
 | `make docs` | Build pinned wiki v1.4.0 under build.nosync/site/. |
 | `make serve-docs DOCS_PORT=8081` | Preview the wiki on an independent port. |
 | `make validate-docs` | Validate wiki content and links. |
-| `make clean` | Remove build.nosync and identified downloaded Host/Unit caches; refuse tracked files or symlinks and preserve supplied tools/Units. |
+| `make clean` | Remove all of `build.nosync/`, `tools/` and `gams_modules/`, without ownership markers; refuse tracked files or symlinks in deletion paths before deleting anything. |
 
 The local Project starts an unsaved animation tree; save authored trees before reopening. It uses canonical sources and pinned published dependencies. Missing Host imports, config or schemas are errors. GUI editing, playback and DOM blend events are not covered by the native tests.
